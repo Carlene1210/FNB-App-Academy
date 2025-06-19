@@ -1,23 +1,27 @@
-<!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="style.css" >
+        <link rel="stylesheet" type="type/css" href="style.css">
     </head>
     <body>
-        <h1>Home Page</h1>
-        <h2>This is a heading</h2>
-        <h3>This is a heading</h3>
-        <h4>This is a heading</h4>
-        <h5>This is a heading</h5>
-        <h1>This is a heading</h1 >
-        <p>Hello everyone</p>
-        <p>This is fun!</p>
-        <a href="boat.html"><img src="images/boat.jpeg" height="150"/></a>
-        <img src="images/cablecar.jpeg" height="150" />
-        <img src="images/city.jpeg" height="150"/>
+        <h1 id="heading1"></h1>
+        <p id="paragraph1"></p>
+        <p id="paragraph2"></p>
 
-        <a href="http://www.google.com">Click here to go to Google</a>
-        <a href="file:///C:/Users/Lenovo/Documents/FNB%20App%20Academy/Websites/CompuKids-Web/index.html"> Click here to go to CompuKids</a>
-        <a href="about.html">Click here to go to About Us</a>
+        <script>
+            var text1;
+            var text2;
+            var text3;
+
+            var numA = 7;
+            var numB = 10;
+
+            text1 = "Hello Everyone on planet Earth";
+            text2 = "I love learning JS";
+            text3 = " JS is awesome!";
+
+            document.getElementById("heading1").innerHTML = (text1);
+            document.getElementById("paragraph1").innerHTML = (text2 + text3);
+            document.getElementById("paragraph2").innerHTML = (numA + " X " + numB + " = "+ numA * numB);
+        </script>
     </body>
 </html>
